@@ -22,7 +22,14 @@ function day() {
     alert("Please enter valid birth date values.");
     return;
   }
-
+  else if (month == 2 && day > 28) {
+    alert("Febuary has only 28 days. Enter a valid value");
+    return;
+  }
+  else if ((month == 4 || month == 6 || month == 9 || month == 11) && day > 30) {
+    alert("This month has no more than 30 days. Enter a valid value");
+    return;
+  }
   
   const birthDate = new Date(year, month - 1, day);
   const currentDate = new Date();
