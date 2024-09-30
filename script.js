@@ -8,9 +8,9 @@ const daysElement = document.querySelector(".days");
 
 
 const calculateButton = document.getElementById("calculateButton"); 
-const date = new Date();
-let month = date.getMonth();
-console.log(month);
+// const date = new Date();
+// let month = date.getMonth();
+// console.log(month);
 
 function day() {
   const day = parseInt(dayInput.value);
